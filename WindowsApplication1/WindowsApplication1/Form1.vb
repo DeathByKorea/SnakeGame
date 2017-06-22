@@ -72,6 +72,7 @@
 #End Region
     Private Sub lengthensnake()
         length_of_snake += 1
+        Label2.Text = length_of_snake - 2
         snake(length_of_snake) = New PictureBox
         With snake(length_of_snake)
             .Height = 10
@@ -125,6 +126,10 @@
     End Sub
 
     Private Sub pb_field_Click(sender As Object, e As EventArgs) Handles pb_field.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
 End Class
